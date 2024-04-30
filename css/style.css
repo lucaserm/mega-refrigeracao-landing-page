@@ -1,0 +1,30 @@
+.navbar-brand {
+    padding: 0.6rem;
+}
+
+.nav-item {
+    position: relative;
+    margin: 0 1rem;
+    transition: all .8s;
+}
+
+.nav-item:hover {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1.5px;
+    background-color: tomato;
+    transition: width .8s;
+}
+
+.nav-item:hover::before,
+.nav-item.active::before {
+    width: 100%;
+}
